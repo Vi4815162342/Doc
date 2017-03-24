@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation Wordpress</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="col-md-120">
+      <div id="header">
+        <div class="welcome">
+          <p>Welcome</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="installation">
+        <a href="#clique_ici">
+          <p> Installation de Wordpress</p></a>
+            <img class="install" src="images/install.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="Découverte">
+        <a href="#découvre">
+          <p> Découvre Wordpress</p></a>
+            <img class="découvre" width="250px" src="images/decouvre.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="Help">
+        <p> Besoin d'aide ?</p>
+        <img class="help" width="250px" src="images/help.png" alt="">
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="first-part">
+        <p id="clique_ici">installation de Wordpress :</p>
+          <div class="links">
+            <a href="https://fr.wordpress.org/"><p> Télécharger Wordpress au format .tar.gz</p></a>
+            <p>Après avoir télécharger le fichier Wordpress, il faur creer une base de donnée.</p>
+          </div>
+        </div>
+      <div class="container_mysql">
+        <div class="mysql">
+          <p>$ mysql -u adminusername -p</p>
+          <p>  Enter password:</p>
+          <p> Welcome to the MySQL monitor.  Commands end with ; or \g.</p>
+          <p>  Your MySQL connection id is 5340 to server version: 3.23.54</p></br>
+
+          <p> Type 'help;' or '\h' for help. Type '\c' to clear the buffer.</p></br>
+
+          <p>mysql> CREATE DATABASE databasename;</p>
+          <p>Query OK, 1 row affected (0.00 sec)</p></br>
+
+          <p>  mysql> GRANT ALL PRIVILEGES ON databasename.* TO "wordpressusername"@"hostname"</p>
+          <p>    -> IDENTIFIED BY "password";</p>
+          <p>  Query OK, 0 rows affected (0.00 sec)</p></br>
+
+          <p>  mysql> FLUSH PRIVILEGES;</p>
+          <p>  Query OK, 0 rows affected (0.01 sec</p>)
+          <p> mysql> EXIT</p>
+          <p>  Bye</p>
+          <p>  $ </p>
+        </div>
+      </div>
+      <div class="extraire">
+        <p>Il faut maintenant extraire le fichier</p>
+      </div>
+      <div class="extraction">
+        <p> tar xzfv wordpress-4.7.3-fr_FR.tar.gz </p>
+      </div>
+      <div class="tar_gz">
+        <p> Ensuite il faut déplacer le dossier dans le dossier /var/www/html/.. pour Debian Linux</p>
+      </div>
+      <div class="deplacement">
+        <p>cp -r ~/tmp/wordpress /var/www/html/wordpress</p>
+      </div>
+      <div class="attribution">
+        <p> Maintenant on va s'attribuer les droits</p>
+      </div>
+      <div class="attri">
+        <p>sudo chmod 2775 -R /var/www/html/wordpress/wp-content/</p>
+      </div>
+      <div class="picture_install">
+        <p>On remplit nos données personelles</p>
+      </div>
+      <div>
+        <img class="picture" src="images/wordpress_install.png" alt="">
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div id="découvre" class="découverte_1">
+        <p> Maintenant l'installation terminé, on va découvrir les différentes options que propose Wordpress !</p>
+      </div>
+      <div class="base">
+        <p> Voyons d'abord quelques termes de base </p>
+      </div>
+      <div class="col-md-6">
+        <div class="tableau_de_bord">
+          <ul>
+            <a href="menu">
+            <li>Menu de navigation</li></a>
+            <a href="page">
+            <li>Page et Edition</li></a>
+            <a href="caté">
+            <li>Catégorie</li></a>
+            <a href="theme">
+            <li>Gerer des thèmes</li></a>
+            <a href="utilisateur">
+            <li>Utilisateur</li></a>
+            <a href="settings">
+            <li>Réglages</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="pic_terme" src="images/terme.jpg" alt="">
+      </div>
+
+      <div class="col-md-12">
+        <div class="taxonomie">
+          <p class="taxo">La taxonomie c'est quoi ? </p>
+          <p> Fondamentalement, une taxonomie est un moyen de regrouper les choses.</p>
+          <p>Par exemple, je pourrais avoir un tas de différents types d’animaux. Je peux les regrouper selon diverses caractéristiques, puis attribuer des noms de groupes.</p>
+          <p>C’est quelque chose que la plupart des gens rencontrent dans les cours de biologie, connu sous le nom de taxonomie linnéenne ou plus simplement classification classique/traditionnelle.</p>
+          <p>Donc ici ce sera la classification de plusieurs contenus !</p>
+          <p>Exemple : Destination, type de séjour...</p>
+        </div>
+        <div class="Terme">
+          <p class="terme1">Les termes.</p>
+          <p>  Ce sont des éléments de classification</p>
+          <p>Exemple : Lyon, Paris = Taxonomie destination / voyage, croisiere = Taxonomie type de séjour</p>
+        </div>
+        <div class="champ">
+          <p> Les champs.</p>
+          <p class="champ1">ce sont des éléments particulié pour des contenus ou terme avec plusieurs types de champ</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="menu">
+
+  </body>
+</html>
